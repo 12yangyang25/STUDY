@@ -76,3 +76,35 @@ pypi.org
 ```git
 pip install ...
 ```
+
+####조건문
+
+```python
+if 조건:
+    실행문
+else if 조건:
+    실행문
+else:
+    실행문
+```
+
+####반복문
+
+```python
+names = ["ddiong", "moomin", "gomdol"]
+
+for name in names:
+    print(name)
+```
+
+####함수
+
+```python
+
+# 함수 정의
+def 함수이름(매개변수이름):
+    실행문
+
+# 함수호출
+함수이름(인자)
+```
