@@ -1,4 +1,4 @@
-# 10분
+# # 10분
 
 import sys
 N = int(input())
@@ -22,3 +22,20 @@ for plan in plans:  # (O(n))
             Y += 1
 
 print(X, Y)
+
+
+# 예제코드
+
+# dx = [0, 0, -1, 1]
+# dy = [-1, 1, 0, 0]
+# moving = ['L', 'R', 'U', 'D']
+# for plan in plans:
+#     for i in range(4):
+#         if plan == moving[i]:
+#             nx = X + dx[i]
+#             ny = Y + dy[i]
+
+#     if nx < 1 or ny < 1 or nx < n or ny > n:
+#         continue
+
+#     X, Y = nx, ny
