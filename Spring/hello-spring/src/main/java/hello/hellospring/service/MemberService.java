@@ -31,7 +31,7 @@ public class MemberService {
     }
 
     private void isduplicated(Member member) {
-        memberRepo.findbyName(member.getName())
+        memberRepo.findByName(member.getName())
                 .ifPresent(m -> { //null이 아니라 값이 있으면 중괄호 안의 로직이 실행, Optional 메소드
                 throw new IllegalStateException("이미 존재하는 회원입니다.");
             });

@@ -34,10 +34,6 @@ public class MemberController { //스프링 컨테이너가 뜰 때 멤버 컨�
         Member member = new Member();
         member.setName(form.getName());
         memberService.join(member);
-
-        System.out.println(form.getName());
-        System.out.println(member.getName());
-
         return "redirect:/";
     }
 
